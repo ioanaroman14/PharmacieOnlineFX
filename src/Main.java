@@ -46,7 +46,8 @@ public class Main extends Application {
 
 
         TransactionService transactionService = new TransactionService(transactionRepository,medicineRepository);
-       // TransactionService.addOrUpdate("2", "3","4",5, "12.10.2019","12");
+        transactionService.addOrUpdate("1","2","3",5,"12.10.1990","12");
+        transactionService.addOrUpdate("2","3","2",10,"12.10.1991","13");
 
 
         MainController mainController = fxmlLoader.getController();
